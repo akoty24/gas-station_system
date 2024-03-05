@@ -184,6 +184,8 @@
     </section>
     <!-- /.content -->
 
+  @yield('scripts')
+
   </div>
   <!-- /.content-wrapper -->
 

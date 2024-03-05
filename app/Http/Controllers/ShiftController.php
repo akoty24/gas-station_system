@@ -29,6 +29,7 @@ public function index(){
         return view('admin.pages.shifts.index',get_defined_vars());
     }
     public function store(Request $request) {
+        
         // Start a database transaction
         DB::beginTransaction();
     
@@ -46,6 +47,7 @@ public function index(){
                 'value.*' => 'required|numeric',
                 'total_defrance.*' => 'required|numeric',
                 'total_value.*' => 'required|numeric',
+                
             ]);
     
             // Create a new Shift instance
@@ -55,6 +57,7 @@ public function index(){
                 'expenses' => $validatedData['expenses'],
                 'went_out' => $validatedData['went_out'],
                 'supply' => $validatedData['supply'],
+                'total_value_after_deductions' => $request->total_value_after_deductions,
             ]);
     
             // Iterate through the readings and calculate totals by fuel type

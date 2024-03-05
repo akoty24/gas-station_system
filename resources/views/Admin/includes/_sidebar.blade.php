@@ -7,7 +7,7 @@
     <section class="sidebar">
       <div class="user-panel">
         <div class="pull-left">
-          <img src="{{ asset(adminurl()->avatar) }}" style="width:40px;height:40px;border-radius:50%" class="" alt="User Image">
+          <img src="" style="width:40px;height:40px;border-radius:50%" class="" alt="User Image">
         </div>
         <div class="pull-left info" style="margin-top:10px">
           <p style="font-size: 25px">مرحبا <span style="color: black " > عماد</span> </p>
